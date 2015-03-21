@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gbb-zj-nBC">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gbb-zj-nBC">
                                 <rect key="frame" x="129" y="129" width="342" height="342"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8l-Jd-Gs1">
@@ -31,9 +31,17 @@
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="342" id="RdN-QJ-4e0"/>
+                                    <constraint firstAttribute="height" constant="342" id="kaN-Na-xwV"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="Gbb-zj-nBC" secondAttribute="centerY" id="3Gg-zj-eem"/>
+                            <constraint firstAttribute="centerX" secondItem="Gbb-zj-nBC" secondAttribute="centerX" id="3Ta-ql-y5Z"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="someView" destination="Gbb-zj-nBC" id="Suz-qK-iSs"/>

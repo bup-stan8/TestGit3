@@ -23,7 +23,9 @@ class ViewController: UIViewController {
 
 
     @IBAction func viewChange(sender: AnyObject) {
-        
+        UIView.animateWithDuration(0.3, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .CurveEaseInOut, animations: {
+            self.someView.frame = CGRectMake(0, 0, self.view.frame.width, self.view.frame.height)
+        }, completion: nil)
     }
 }
 
